@@ -13,7 +13,7 @@ To the extent possible under law, the author(s) have dedicated all copyright and
 You should have received a copy of the CC0 Public Domain Dedication along with this software. If not, see <http://creativecommons.org/publicdomain/zero/1.0/>.
 
 -->
-<script type="text/javascript" src="gamepadtest.js"></script>
+<script type="text/javascript" src="gamepad.js"></script>
 <style>
 .axes {
   padding: 1em;
@@ -54,10 +54,37 @@ You should have received a copy of the CC0 Public Domain Dedication along with t
   font-size: 0.8em;
   opacity: 0.7;
 }
+
+#controllerOverlay {
+  position: relative;
+}
+
+#controllerOverlay img {
+  position: absolute;
+  display: none;
+}
 </style>
 </head>
 <body>
 <h2 id="start">Press a button on your controller to start</h2>
-<a href="https://github.com/luser/gamepadtest"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
+
+<div id="controllerOverlay">
+  <img src="./controller overlays/controller.png" alt="" style="display: inline;">
+  <img id="A" src="./controller overlays/A.png" alt="">
+  <img id="B" src="./controller overlays/B.png" alt="">
+  <img id="X" src="./controller overlays/X.png" alt="">
+  <img id="Y" src="./controller overlays/Y.png" alt="">
+  <img id="LB" src="./controller overlays/LB.png" alt="">
+  <img id="RB" src="./controller overlays/RB.png" alt="">
+  <img id="Left" src="./controller overlays/Left.png" alt="">
+  <img id="Up" src="./controller overlays/Up.png" alt="">
+  <img id="Down" src="./controller overlays/Down.png" alt="">
+  <img id="Right" src="./controller overlays/Right.png" alt="">
+</div>
+
+<div style="height: 1000px;">
+
+</div>
+
 </body>
 </html>
